@@ -5,7 +5,7 @@ homepage: https://github.com/i-Naji/tdlib
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=2.8.0"
+  flutter: ">=2.5.2"
 
 dependencies:
   flutter:
@@ -31,17 +31,9 @@ flutter:
     platforms:
       android:
         package: org.naji.td.tdlib
-        dartPluginClass: TdNativePlugin
+        pluginClass: TdLibPlugin
       ios:
-        dartPluginClass: TdNativePlugin
-      windows:
-        dartPluginClass: TdNativePlugin
-      macos:
-        dartPluginClass: TdNativePlugin
-      linux:
-        dartPluginClass: TdNativePlugin
-      web:
-        pluginClass: TdWebPlugin
+        pluginClass: TdLibPlugin
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg
@@ -72,9 +64,3 @@ flutter:
   #
   # For details regarding fonts in packages, see
   # https://flutter.dev/custom-fonts/#from-packages
-
-false_secrets:
-  - /android/src/main/jniLibs/arm64-v8a/libtdjson.so
-  - /android/src/main/jniLibs/armeabi-v7a/libtdjson.so
-  - /android/src/main/jniLibs/x86/libtdjson.so
-  - /android/src/main/jniLibs/x86_64/libtdjson.so
